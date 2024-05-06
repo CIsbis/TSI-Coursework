@@ -1,9 +1,8 @@
 import unittest
 from unittest.mock import patch
 from src.user_logic.Register import Register
-import os
 import io
-import sys
+
 
 
 class RegisterMock(unittest.TestCase):
@@ -27,5 +26,3 @@ class RegisterMock(unittest.TestCase):
             self.assertIn("Resource directory does not exist.", mock_stdout.getvalue())
 
 
-if __name__ == "__main__":
-    unittest.main()

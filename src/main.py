@@ -30,8 +30,12 @@ def game_start():
     print("**********Welcome to Knots & Crosses!**********")
     run_game()
 
-if __name__ == "__main__":
+def game_start_condition():
     verified = welcome()
 
     if verified:
         game_start()
+
+
+if __name__ == '__main__':
+    game_start_condition()
