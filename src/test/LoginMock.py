@@ -3,7 +3,7 @@ from unittest.mock import patch
 from src.user_logic.LogIn import LogIn
 
 
-class TestLogIn(unittest.TestCase):
+class LoginMock(unittest.TestCase):
 
     @patch('src.user_logic.LogIn')
     def test_log_in_success(self, MockLogIn):

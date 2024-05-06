@@ -6,7 +6,7 @@ import io
 import sys
 
 
-class TestRegister(unittest.TestCase):
+class RegisterMock(unittest.TestCase):
 
     @patch('builtins.input')
     @patch('sys.stdout', new_callable=io.StringIO)

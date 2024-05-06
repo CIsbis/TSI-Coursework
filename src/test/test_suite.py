@@ -1,15 +1,15 @@
 import unittest
 
-from src.test.LogIn_mock import TestLogIn
-from src.test.Register_mock import TestRegister
+from src.test.LoginMock import LoginMock
+from src.test.RegisterMock import RegisterMock
 
 
 def test_suite():
     suite = unittest.TestSuite()
 
     loader = unittest.TestLoader()
-    suite.addTest(loader.loadTestsFromTestCase(TestRegister))
-    suite.addTest(loader.loadTestsFromTestCase(TestLogIn))
+    suite.addTest(loader.loadTestsFromTestCase(RegisterMock))
+    suite.addTest(loader.loadTestsFromTestCase(LoginMock))
 
     return suite
 
